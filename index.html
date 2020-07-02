@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cadastro de Amostras</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+  </head>
+
+  <body
+    class="w-75 p-2 container center-align"
+    style="
+      opacity: 0.9;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('https://store-images.s-microsoft.com/image/apps.38275.14464746617519691.f0303f2a-04b5-422c-9722-0b26898e7910.612addcc-2f3c-476c-a562-5af213fef5c4?mode=scale&q=90&h=1080&w=1920');
+    "
+  >
+    <div class="card card-image">
+      <div class="text-black rgba-stylish-strong py-5 px-5 z-depth-4">
+        <div class="container">
+          <h1>Cadastro de Amostras</h1>
+          <hr />
+          <div>
+            <input label="id" type="hidden" />
+            <div class="from-group">
+              <label for="Responsavel"></label>
+              <input
+                class="from-control"
+                label="responsavel"
+                placeholder="Responsável pela coleta"
+              />
+
+              <label for="Ponto"></label>
+              <input
+                class="from-control"
+                label="ponto"
+                placeholder="Digite o ponto"
+              />
+
+              <label for="Descricao"></label>
+              <input
+                class="from-control"
+                label="descricao"
+                placeholder="Descrição"
+              />
+              <hr />
+
+              <label for="Latitude"></label>
+              <input
+                class="from-control"
+                label="latitude"
+                placeholder="Digite a latitude"
+              />
+
+              <label for="Longitude"></label>
+              <input
+                class="from-control"
+                label="longitude"
+                placeholder="Digite a longitude"
+              />
+
+              <label for="Elevacao"></label>
+              <input
+                class="from-control"
+                label="elevacao"
+                placeholder="Digite a elevação (m)"
+              />
+            </div>
+            <hr />
+            <button class="btn btn-success" incluir>Incluir</button>
+            <a href="http://localhost:2424/download" download
+              >Download (.xlsx)</a
+            >
+          </div>
+          <hr />
+          <!-- Container do mapa -->
+          <div id="mapid" style="height: 300px; opacity: 100;"></div>
+          <hr />
+
+          <table class="table" id="cadastro">
+            <thead>
+              <tr>
+                <th>Responsável</th>
+                <th>Pontos</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Elevação (m)</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="cadastroLinhas"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
+    <script>
+      const APP = "http://localhost:2424";
+      let mymap;
+      const markers = new L.LayerGroup();
+
+      const createButton = (label, type) => {
+        return $("<button>").addClass(`btn btn-${type}`).html(label);
+      };
+
+      const formataLinhas = (amostras) => {
+        markers.clearLayers();
+        const linhas = amostras.map((amostra) => {
+          const updateButton = createButton("Atualizar", "warning");
+          updateButton.click(() => atualizaCadastro(amostra));
+          const removeButtoon = createButton("Excluir", "danger");
+          removeButtoon.click(() => removeCadastro(amostra));
+          const marcador = L.marker([amostra.latitude, amostra.longitude]);
+          markers.addLayer(marcador);
+
+          return $("<tr>") //linha de tabela
+            .append($("<td>").append(amostra.responsavel))
+            .append($("<td>").append(amostra.ponto))
+            .append($("<td>").append(amostra.latitude))
+            .append($("<td>").append(amostra.longitude))
+            .append($("<td>").append(amostra.elevacao))
+            .append($("<td>").append(amostra.descricao))
+            .append($("<td>").append(updateButton).append(removeButtoon));
+        });
+        $("#cadastroLinhas").html(linhas);
+      };
+
+      const atualizaCadastro = (amostra) => {
+        $("[label=id]").val(amostra._id);
+        $("[label=ponto]").val(amostra.responsavel);
+        $("[label=ponto]").val(amostra.ponto);
+        $("[label=latitude]").val(amostra.latitude);
+        $("[label=longitude]").val(amostra.longitude);
+        $("[label=elevacao]").val(amostra.elevacao);
+        $("[label=descricao]").val(amostra.descricao);
+      };
+
+      const removeCadastro = (amostra) => {
+        $.ajax({
+          method: "DELETE",
+          url: `${APP}/cadastro/${amostra._id}`,
+          success: getCadastro,
+        });
+      };
+
+      const getCadastro = () => {
+        $.ajax({
+          url: `${APP}/cadastro`,
+          success: (cadastro) => {
+            //	console.log(cadastro)
+            formataLinhas(cadastro);
+            $("[label]").val("");
+          },
+        });
+      };
+
+      const downloadCadastro = () => {
+        $.ajax({
+          url: `${APP}/download`,
+          success: (download) => {
+            console.log("download");
+          },
+        });
+      };
+
+      const salvaCadastro = () => {
+        const _id = $("[label=id]").val();
+        const responsavel = $("[label=responsavel]").val();
+        const ponto = $("[label=ponto]").val();
+        const latitude = $("[label=latitude]").val();
+        const longitude = $("[label=longitude]").val();
+        const elevacao = $("[label=elevacao]").val();
+        const descricao = $("[label=descricao]").val();
+
+        $.ajax({
+          method: _id ? "PUT" : "POST", //CRUD - criar, vizualizar, deletar, editar
+          url: `${APP}/cadastro/${_id}`,
+          data: _id
+            ? {
+                _id,
+                responsavel,
+                ponto,
+                latitude,
+                longitude,
+                elevacao,
+                descricao,
+              }
+            : { responsavel, ponto, latitude, longitude, elevacao, descricao },
+          success: getCadastro,
+        });
+      };
+
+      $(() => {
+        $("[incluir]").click(salvaCadastro);
+        $("[download]").click(downloadCadastro);
+
+        mymap = L.map("mapid").setView([0, 0], 2);
+
+        L.tileLayer(
+          "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}",
+          {
+            foo: "bar",
+            attribution:
+              'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+          }
+        ).addTo(mymap);
+        markers.addTo(mymap);
+        getCadastro();
+      });
+    </script>
+  </body>
+</html>

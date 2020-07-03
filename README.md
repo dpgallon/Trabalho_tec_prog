@@ -41,6 +41,8 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 8. Se algum dado não estiver correto, pode ser alterado ou excluído. 
 
+![image](https://user-images.githubusercontent.com/66315345/86490363-83cb1280-bd3d-11ea-9636-af8cbe54fe90.png)
+
 
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
 

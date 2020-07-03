@@ -1,4 +1,6 @@
-# TrabalhoTécnicas de Programação
+# Trabalho de Técnicas de Programação 
+## Professor Cristiano Both 
+## Aluna:Débora Gallon 
 
 ## Cadastro de amostras 
 Uma das etapas mais importantes realizadas no campo pelo geólogo é a coleta de amostras de rocha e sedimentos. Etapa esta que pode anular um deposito mineral como pode identificar um possível alvo para estudo e exploração. Desta forma, o trabalho realizado em campo conta com equipes, que muitas vezes se revezam em campanhas de campo, no entanto o banco de dados alimentado é o mesmo. 
@@ -15,7 +17,7 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 ## Instruções para uso:
 1. Faça o download dos os arquivos deste projeto e insira em um diretório de interesse;
-2. Em um terminal Shell, dentro do diretório criado para este projeto, digite: docker-compose up 
+2. Em um terminal Shell, dentro do diretório criado para este projeto, digite: ```docker-compose up ``` 
 3. Abra o navegador e acesse: http://localhost:8080/ 
 4. Visão página web: 
 ![image](https://user-images.githubusercontent.com/66315345/86476032-21154f00-bd1c-11ea-803f-f3a38b78ddfe.png)

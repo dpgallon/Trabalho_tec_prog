@@ -55,12 +55,12 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
 
-![image](https://github.com/dpgallon/Trabalho_tec_prog/issues/6#issue-650711254)
+![image](https://user-images.githubusercontent.com/66315345/86490022-68abd300-bd3c-11ea-970b-28fd872a9164.png)
 
 10. Abrir no diretório de download o arquivo ''Amostras.xlsx
 
 **Arquivo em Excel com campos do banco de dados:**
-![image](https://user-images.githubusercontent.com/66315345/86490022-68abd300-bd3c-11ea-970b-28fd872a9164.png)
+
 
 
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando para parar o container: 

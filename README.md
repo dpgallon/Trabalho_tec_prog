@@ -1,5 +1,6 @@
-# Trabalho de Técnicas de Programação 
+# Trabalho de Técnicas de Programação PPCA - Unisinos
 **Professor Cristiano Both**
+
 **Aluna: Débora Gallon**
 
 ## Cadastro de amostras 
@@ -8,7 +9,6 @@ Mesmo contando com tantas tecnologias a disposição no século XXI, a geologia 
 
 ## Objetivo 
 Este trabalho tem como finalidade auxiliar o geocientista no momento em que é realizado o preenchimento do banco de dados, como muuitas vezes esses erros de digitação só são observados quando é gerado um mapa de amostragens, o intuito é ter essa vizualização instantanea e caso ocorra algum erro na digitação ele seja observado no primeiro momento. 
-
 
 
 
@@ -40,13 +40,16 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 ![image](https://user-images.githubusercontent.com/66315345/86489607-3c438700-bd3b-11ea-8fd3-fd4abf8eec3d.png)
 
 8. Se algum dado não estiver correto, pode ser alterado ou excluído. 
+
+
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
 
 ![image](https://github.com/dpgallon/Trabalho_tec_prog/issues/6#issue-650711254)
 
 10. Abrir no diretório de download o arquivo ''Amostras.xlsx
 
-![image](https://user-images.githubusercontent.com/66315345/86489866-faffa700-bd3b-11ea-849d-168f55e1c318.png)
+![image](https://user-images.githubusercontent.com/66315345/86490022-68abd300-bd3c-11ea-970b-28fd872a9164.png)
+
 
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando: 
 
@@ -55,12 +58,12 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 Para parar o container. 
 12. Para derrubar o servidor, inserir o seguinte comando: 
 
-```docker-compose down```
+``docker-compose down``
 
 13. Para sair: 
 
-```exit```
+``exit``
 
 ## Futuros trabalhos 
-> Inserir o nome do ponto no marcador no mapa 
-> Opção de upload da tabela preenchida e geração automática dos marcadores 
+- Inserir o nome do ponto no marcador no mapa 
+- Opção de upload da tabela preenchida e geração automática dos marcadores 

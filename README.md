@@ -61,7 +61,7 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 **Arquivo em Excel com campos do banco de dados:**
 
-
+![image](https://user-images.githubusercontent.com/66315345/86489866-faffa700-bd3b-11ea-849d-168f55e1c318.png)
 
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando para parar o container: 
 

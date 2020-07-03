@@ -36,9 +36,16 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
  - Elevação:
 6. Clicar no botão **Incluir**
 7. Observar a inserção do marcador no mapa, se estiver de acordo, continuar com a entrada de dados no cadastro.
+
+![image](https://user-images.githubusercontent.com/66315345/86489607-3c438700-bd3b-11ea-8fd3-fd4abf8eec3d.png)
+
 8. Se algum dado não estiver correto, pode ser alterado ou excluído. 
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
+
+
 10. Abrir no diretório de download o arquivo ''Amostras.xlsx
+
+
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando: 
 
 ``Ctrl + C``

@@ -24,25 +24,27 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 ```docker-compose up ``` 
 
-3. Abra o navegador e acesse: http://localhost:8080/ 
+3. Abra o navegador e acesse: 
+<a href="http://localhost:8080/">localhost</a> 
 4. Visão página web: 
 ![image](https://user-images.githubusercontent.com/66315345/86476032-21154f00-bd1c-11ea-803f-f3a38b78ddfe.png)
 5. Entrada de dados para o cadastro: 
- - Responsável pela coleta:
- - Ponto:
- - Descrição: 
- - Latitude:
- - Longitude:
- - Elevação:
+ - Responsável pela coleta;
+ - Ponto;
+ - Descrição;
+ - Latitude;
+ - Longitude;
+ - Elevação;
 6. Clicar no botão **Incluir**
 7. Observar a inserção do marcador no mapa, se estiver de acordo, continuar com a entrada de dados no cadastro.
 
+**Visão página web com dados preenchidos:**
 ![image](https://user-images.githubusercontent.com/66315345/86489607-3c438700-bd3b-11ea-8fd3-fd4abf8eec3d.png)
 
 8. Se algum dado não estiver correto, pode ser alterado ou excluído. 
 
+**Visão página com erro de coordenada (Caiu no meio do oceâno!):**
 ![image](https://user-images.githubusercontent.com/66315345/86490363-83cb1280-bd3d-11ea-9636-af8cbe54fe90.png)
-
 
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
 
@@ -50,14 +52,14 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 10. Abrir no diretório de download o arquivo ''Amostras.xlsx
 
+**Arquivo em Excel com campos do banco de dados:**
 ![image](https://user-images.githubusercontent.com/66315345/86490022-68abd300-bd3c-11ea-970b-28fd872a9164.png)
 
 
-11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando: 
+11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando para parar o container: 
 
 ``Ctrl + C``
 
-Para parar o container. 
 12. Para derrubar o servidor, inserir o seguinte comando: 
 
 ``docker-compose down``
@@ -67,5 +69,6 @@ Para parar o container.
 ``exit``
 
 ## Futuros trabalhos 
-- Inserir o nome do ponto no marcador no mapa 
-- Opção de upload da tabela preenchida e geração automática dos marcadores 
+- Inserir o nome do ponto no marcador no mapa;
+- Opção de upload da tabela preenchida e geração automática dos marcadores;
+- Zoom ao inserir o marcador; 

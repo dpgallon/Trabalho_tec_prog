@@ -5,7 +5,7 @@
 
 ## Cadastro de amostras 
 
- Uma das etapas mais importantes realizadas no trabalho de campo pelo geocientista é a coleta de amostras de rocha e sedimentos. Durante o reconhecimento ode uma área, a coleta de amostras pode anular um deposito mineral como pode identificar um possível alvo para estudo e exploração, e desta forma é uma importante ferramenta. Este trabalho demanda prolongadas campanhas e muitas vezes as equipes precisam se revezar, e assim, havendo uma alternância no amostrador, porem o banco o banco de dados alimentado com as informações de coletas é o mesmo.
+ Uma das etapas mais importantes realizadas no trabalho de campo pelo geocientista é a coleta de amostras de rocha e sedimentos. Durante o reconhecimento de uma área, a coleta de amostras pode anular um depósito mineral como pode identificar um possível alvo para estudo e exploração, e desta forma é uma importante ferramenta. Este trabalho demanda prolongadas campanhas e muitas vezes as equipes precisam se revezar, e assim, havendo uma alternância no amostrador, porem o banco o banco de dados alimentado com as informações de coletas é o mesmo.
 
  De certa forma a geologia é uma ciência nova comparada as outras existentes e ela ainda conta com ferramentas antigas e em muitas vezes a resistência de alguns geocientistas às novas tecnologias, desta forma, está aos poucos se modernizando e englobando métodos mais modernos de obtenção de dados.
 

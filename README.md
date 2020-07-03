@@ -21,7 +21,9 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 ## Instruções para uso:
 1. Faça o download dos os arquivos deste projeto e insira em um diretório de interesse;
 2. Em um terminal Shell, dentro do diretório criado para este projeto, digite: 
+
 ```docker-compose up ``` 
+
 3. Abra o navegador e acesse: http://localhost:8080/ 
 4. Visão página web: 
 ![image](https://user-images.githubusercontent.com/66315345/86476032-21154f00-bd1c-11ea-803f-f3a38b78ddfe.png)
@@ -38,11 +40,16 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
 10. Abrir no diretório de download o arquivo ''Amostras.xlsx
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando: 
+
 ```Ctrl + C```
+
 Para parar o container. 
 12. Para derrubar o servidor, inserir o seguinte comando: 
+
 ```docker-compose down```
+
 13. Para sair: 
+
 ```exit```
 
 ## Futuros trabalhos 

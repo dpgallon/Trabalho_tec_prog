@@ -29,7 +29,7 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 1. Faça o download dos os arquivos deste projeto e insira em um diretório de interesse;
 2. Em um terminal Shell, dentro do diretório criado para este projeto, digite: 
 
-```docker-compose up ``` 
+```docker-compose up``` 
 
 3. Abra o navegador e acesse: 
 <a href="http://localhost:8080/">localhost</a> 
@@ -65,15 +65,15 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando para parar o container: 
 
-``Ctrl + C``
+```Ctrl + C```
 
 12. Para derrubar o servidor, inserir o seguinte comando: 
 
-``docker-compose down``
+```docker-compose down```
 
 13. Para sair: 
 
-``exit``
+```exit```
 
 ## Futuros trabalhos 
 - Inserir o nome do ponto no marcador no mapa;

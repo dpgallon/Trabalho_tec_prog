@@ -42,9 +42,11 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 8. Se algum dado não estiver correto, pode ser alterado ou excluído. 
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
 
+![image](https://github.com/dpgallon/Trabalho_tec_prog/issues/6#issue-650711254)
 
 10. Abrir no diretório de download o arquivo ''Amostras.xlsx
 
+![image](https://user-images.githubusercontent.com/66315345/86489866-faffa700-bd3b-11ea-849d-168f55e1c318.png)
 
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando: 
 

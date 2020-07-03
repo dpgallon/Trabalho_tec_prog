@@ -1,6 +1,6 @@
 # Trabalho de Técnicas de Programação 
-## Professor Cristiano Both 
-## Aluna:Débora Gallon 
+**Professor Cristiano Both 
+**Aluna: Débora Gallon
 
 ## Cadastro de amostras 
 Uma das etapas mais importantes realizadas no campo pelo geólogo é a coleta de amostras de rocha e sedimentos. Etapa esta que pode anular um deposito mineral como pode identificar um possível alvo para estudo e exploração. Desta forma, o trabalho realizado em campo conta com equipes, que muitas vezes se revezam em campanhas de campo, no entanto o banco de dados alimentado é o mesmo. 
@@ -12,8 +12,9 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 
 
 
-## Micro serviços 
+## Arquitetura: Micro serviços 
 ![Diagrama micro serviços](https://user-images.githubusercontent.com/66315345/86483774-229a4380-bd2b-11ea-9a19-0d46cf123b6c.png)
+
 
 ## Instruções para uso:
 1. Faça o download dos os arquivos deste projeto e insira em um diretório de interesse;

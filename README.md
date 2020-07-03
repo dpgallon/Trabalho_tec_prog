@@ -1,6 +1,6 @@
 # Trabalho de Técnicas de Programação 
-**Professor Cristiano Both 
-**Aluna: Débora Gallon
+**Professor Cristiano Both**
+**Aluna: Débora Gallon**
 
 ## Cadastro de amostras 
 Uma das etapas mais importantes realizadas no campo pelo geólogo é a coleta de amostras de rocha e sedimentos. Etapa esta que pode anular um deposito mineral como pode identificar um possível alvo para estudo e exploração. Desta forma, o trabalho realizado em campo conta com equipes, que muitas vezes se revezam em campanhas de campo, no entanto o banco de dados alimentado é o mesmo. 
@@ -28,20 +28,20 @@ Este trabalho tem como finalidade auxiliar o geocientista no momento em que é r
 4. Visão página web: 
 ![image](https://user-images.githubusercontent.com/66315345/86476032-21154f00-bd1c-11ea-803f-f3a38b78ddfe.png)
 5. Entrada de dados para o cadastro: 
-  Responsável pela coleta:
-  Ponto:
-  Descrição: 
-  Latitude:
-  Longitude:
-  Elevação:
-6. Clicar no botão **Incluir
+ - Responsável pela coleta:
+ - Ponto:
+ - Descrição: 
+ - Latitude:
+ - Longitude:
+ - Elevação:
+6. Clicar no botão **Incluir**
 7. Observar a inserção do marcador no mapa, se estiver de acordo, continuar com a entrada de dados no cadastro.
 8. Se algum dado não estiver correto, pode ser alterado ou excluído. 
 9. Ao finalizar a inserção dos dados, fazer download em .xlsx
 10. Abrir no diretório de download o arquivo ''Amostras.xlsx
 11. Para finalizar, voltar no terminal Shell, inserir o seguinte comando: 
 
-```Ctrl + C```
+``Ctrl + C``
 
 Para parar o container. 
 12. Para derrubar o servidor, inserir o seguinte comando: 

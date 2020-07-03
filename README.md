@@ -4,11 +4,18 @@
 **Aluna: Débora Gallon**
 
 ## Cadastro de amostras 
-Uma das etapas mais importantes realizadas no campo pelo geólogo é a coleta de amostras de rocha e sedimentos. Etapa esta que pode anular um deposito mineral como pode identificar um possível alvo para estudo e exploração. Desta forma, o trabalho realizado em campo conta com equipes, que muitas vezes se revezam em campanhas de campo, no entanto o banco de dados alimentado é o mesmo. 
-Mesmo contando com tantas tecnologias a disposição no século XXI, a geologia é uma ciencia que esta aos pouco se modernizando e englobando novas ferramentas. O principal problema relatado corre durante o preenchimento manual no banco de dados, que surge como erros de digitação, especialmente nas coordenadas. Outros problemas também podem ser destacados quando se trata de coordenadas, existem diversos sistemas cartográficos, muitas vezes troca de informações entre projetos, geólogos, e até mesmo empresas é comum de ocorrer confusões. 
+
+Uma das etapas mais importantes realizadas no trabalho de campo pelo geólogo é a coleta de amostras de rocha e sedimentos. Durante o reconhecimento ode uma área, a coleta de amostras pode anular um deposito mineral como pode identificar um possível alvo para estudo e exploração, e desta forma é uma importante ferramenta. Este trabalho demanda prolongadas campanhas e muitas vezes as equipes precisam se revezar, e assim, havendo uma alternância no amostrador, porem o banco o banco de dados alimentado com as informações de coletas é o mesmo.
+
+De certa forma a geologia é uma ciência nova comparada as outras existentes e ela ainda conta com ferramentas antigas e em muitas vezes a resistência de alguns geocientistas às novas tecnologias, desta forma, está aos poucos se modernizando e englobando métodos mais modernos de obtenção de dados.
+
+O principal problema relatado em campanhas de amostragem, ocorre durante o preenchimento manual no banco de dados, onde erros de digitação são comuns, especialmente nas coordenadas com por exemplo: o sinal pode ser esquecido e poderá haver a troca de hemisférios, números podem ser invertidos  (53 por 43) e amostras sendo locadas em meio a uma cidade ou até mesmo em no meio do oceano onde não seria passível de amostragem, inversão da latitude e longitude... entre outros. 
+Geralmente quem coleta os dados também faz o preenchimento do banco de dados, e com o auxílio do Cadastro de Amostras este profissional poderia fazer a checkagem e um aumento na confiabilidade destes dados, pois normalmente estes erros só são observados quando são gerados mapas de amostragem, processo este posterior, gerado após as análises geoquímicas serem recebidas dos laboratórios.  
+ Outros problemas também podem ser destacados quando se trata de coordenadas, existem diversos sistemas cartográficos, muitas vezes troca de informações entre projetos e geocientistas, e até mesmo empresas é comum de ocorrer confusões, porém o intuito deste trabalho é diminuir os erros causados na inserção de dados no banco de dados. 
+
 
 ## Objetivo 
-Este trabalho tem como finalidade auxiliar o geocientista no momento em que é realizado o preenchimento do banco de dados, como muuitas vezes esses erros de digitação só são observados quando é gerado um mapa de amostragens, o intuito é ter essa vizualização instantanea e caso ocorra algum erro na digitação ele seja observado no primeiro momento. 
+Este trabalho tem como finalidade auxiliar o geocientista no momento em que é realizado o preenchimento do banco de dados, como muitas vezes esses erros de digitação só são observados quando é gerado um mapa de amostragens, o intuito é ter essa vizualização instantanea e caso ocorra algum erro na digitação ele seja observado no primeiro momento e corrigido. 
 
 
 
